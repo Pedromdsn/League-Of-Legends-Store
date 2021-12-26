@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--scrollbar-scroll: #5336d1;
+	--scrollbar-background: #ffffff;
+	--scrollbar-width: 0px;
+}
+
+* {
+	user-select: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/*ScrollBar*/
+html {
+	scrollbar-color: var(--scrollbar-scroll) var(--scrollbar-background);
+}
+
+::-webkit-scrollbar {
+	width: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+	background: var(--scrollbar-background);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--scrollbar-scroll);
+	border-radius: 15px;
+}
+
+.text-shadown {
+	text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -2px black;
+}
