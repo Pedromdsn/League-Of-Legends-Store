@@ -37,3 +37,11 @@ html {
 .text-shadown {
 	text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -2px black;
 }
+
+.after-border {
+	@apply relative bg-white after:w-full after:h-full after:absolute after:border-2 after:border-blue-500 after:-z-10 after:rounded-lg;
+}
+
+.champion {
+	@apply border-[3px] border-blue-400 flex justify-center items-center rounded-[100%] before:rounded-[100%] overflow-hidden before:border-dashed before:border-2 before:border-blue-500 before:w-[420px] before:h-[420px] before:absolute;
+}
