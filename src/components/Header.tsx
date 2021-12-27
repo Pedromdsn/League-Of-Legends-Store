@@ -11,8 +11,8 @@ const Header = () => {
 			<Logo />
 			<div
 				className={`flex gap-6 items-center transition-all md:overflow-hidden 
-				md:justify-end duration-200 md:text-xl
-				${mobile ? "flex-col md:h-[350px]" : "md:h-20 md:opacity-0"}`}>
+				md:justify-end duration-200 md:text-xl md:flex-col 
+				${mobile ? "md:h-[350px]" : "md:h-20 md:opacity-0"}`}>
 				<HeaderItem name="Home" />
 				<HeaderItem name="About" />
 				<HeaderItem name="Products" />

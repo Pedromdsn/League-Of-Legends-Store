@@ -31,7 +31,7 @@ interface WhyItemProps {
 
 const WhyItem = ({ Icon, title, description }: WhyItemProps) => {
 	return (
-		<div className="z-10 relative w-[30%] min-w-[350px]">
+		<div className="z-10 relative w-[30%] min-w-[330px]">
 			<div
 				className="flex flex-col px-6 py-5 gap-3 bg-white rounded-md shadow-md shadow-gray-500 after-border after:-translate-x-3 after:-translate-y-1">
 				<div className="flex items-center gap-5">

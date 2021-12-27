@@ -14,6 +14,7 @@ const Region = () => {
 					<RegionBarItem name="BR" description="Brazil" />
 					<RegionBarItem name="OCE" description="Oceania" />
 					<RegionBarItem name="TR" description="Turkey" />
+					<RegionBarItem name="KR" description="Korea" />
 				</div>
 				<div className="flex flex-wrap mt-14 gap-7 justify-center">
 					<RegionToBuyItem price={9.99} />
@@ -36,13 +37,13 @@ const RegionBarItem = ({ name, description }: RegionItemBarProps) => {
 	const { region, setRegion } = useContext(RegionContext)
 	return (
 		<div
-			className={`text-white px-7 py-4 bg-black/90 rounded min-w-[18%] relative ${
+			className={`text-white px-7 py-4 bg-black/90 rounded min-w-[200px] relative ${
 				region == name &&
 				"after:-translate-x-7 after:border-b-4 after:border-blue-500 after:absolute after:bottom-0 after:z-10 after:w-full after:h-full after:rounded-b "
 			}`}
 			onClick={() => setRegion(name)}>
 			<div className="text-2xl">{name}</div>
-			<div className="text-xl">{description}</div>
+			<div className="text-xl md:hidden">{description}</div>
 		</div>
 	)
 }
