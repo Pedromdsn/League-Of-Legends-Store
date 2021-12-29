@@ -13,9 +13,9 @@ const MainChampion = () => {
 						commodo aliqua culpa consectetur nulla. Commodo occaecat Lorem labore dolore officia proident consequat
 						occaecat ut ut anim cupidatat eiusmod id.
 					</h2>
-					<div className="flex gap-7 uppercase ">
-						<div className="bg-blue-400 px-14 md:px-5 py-3 rounded font-medium">Button #1</div>
-						<div className="bg-green-400 px-14 md:px-5 py-3 rounded font-medium">Button #2</div>
+					<div className="flex gap-7 uppercase">
+						<div className="bg-blue-400 px-14 md:px-5 py-3 rounded font-medium cursor-pointer hover:brightness-90 transition-all">Button #1</div>
+						<div className="bg-green-400 px-14 md:px-5 py-3 rounded font-medium cursor-pointer hover:brightness-90 transition-all">Button #2</div>
 					</div>
 				</div>
 				<ChampImage/>

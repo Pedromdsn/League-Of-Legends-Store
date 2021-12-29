@@ -37,10 +37,9 @@ const RegionBarItem = ({ name, description }: RegionItemBarProps) => {
 	const { region, setRegion } = useContext(RegionContext)
 	return (
 		<div
-			className={`text-white px-7 py-4 bg-black/90 rounded min-w-[200px] relative ${
-				region == name &&
-				"after:-translate-x-7 after:border-b-4 after:border-blue-500 after:absolute after:bottom-0 after:z-10 after:w-full after:h-full after:rounded-b "
-			}`}
+			className={`text-white px-7 py-4 bg-black/90 rounded min-w-[200px] relative after:transition-all cursor-pointer after:opacity-0 after:duration-500
+			after:-translate-x-7 after:border-b-4 after:border-blue-500 after:absolute after:bottom-0 after:z-10 after:w-full after:h-full after:rounded-b hover:after:opacity-100
+			${region == name && "after:opacity-100"}`}
 			onClick={() => setRegion(name)}>
 			<div className="text-2xl">{name}</div>
 			<div className="text-xl md:hidden">{description}</div>
@@ -66,7 +65,7 @@ const RegionToBuyItem = ({ price }: RegionToBuyBarProps) => {
 				<Line text="Yasuo AirBlade Skill" />
 				<Line text="Yasuo AirBlade Skill" />
 			</div>
-			<button className="w-[90%] py-2 bg-green-500 text-white font-semibold text-xl rounded-lg">Buy</button>
+			<button className="w-[90%] py-2 bg-green-500 text-white font-semibold text-xl rounded-lg hover:brightness-105 transition-all hover:scale-105">Buy</button>
 		</div>
 	)
 }

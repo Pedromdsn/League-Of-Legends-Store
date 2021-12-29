@@ -48,7 +48,7 @@ interface IProps {
 const HeaderItem = ({ name, link = "#", destaque }: IProps) => {
 	return (
 		<Link href={link}>
-			<div className={destaque && "px-6 py-3 bg-blue-500 rounded-lg"}>{name}</div>
+			<div className={`cursor-pointer ${destaque && "px-6 py-3 bg-blue-500 rounded-lg "}`}>{name}</div>
 		</Link>
 	)
 }

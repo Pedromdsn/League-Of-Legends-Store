@@ -5,7 +5,7 @@ const ChampImage = () => {
 	return (
 		<div
 			className="champion xl:hidden">
-			<Image src={Champ} height="400px" width="400px" />
+			<Image src={Champ} height="400px" width="400px" priority/>
 		</div>
 	)
 }
