@@ -14,9 +14,8 @@ const Header = () => {
 				md:justify-end duration-200 md:text-xl md:flex-col 
 				${mobile ? "md:h-[350px]" : "md:h-20 md:opacity-0"}`}>
 				<HeaderItem name="Home" />
-				<HeaderItem name="About" />
-				<HeaderItem name="Products" />
-				<HeaderItem name="Faq" />
+				<HeaderItem name="About" link="/#about"/>
+				<HeaderItem name="Products" link="/#products"/>
 				<HeaderItem name="Contact" destaque />
 			</div>
 			<GiHamburgerMenu

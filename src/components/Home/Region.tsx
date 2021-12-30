@@ -6,7 +6,7 @@ import { BsCheckLg } from "react-icons/bs"
 const Region = () => {
 	return (
 		<RegionProvider>
-			<div className="max-w-[1350px] w-[90vw] mx-auto xl:items-center flex flex-col">
+			<div id="products" className="max-w-[1350px] w-[90vw] mx-auto xl:items-center flex flex-col scroll-mt-10">
 				<div className="text-shadown text-4xl text-white font-bold uppercase">Select Region...</div>
 				<div className="flex flex-wrap mt-5 gap-5 xl:justify-center">
 					<RegionBarItem name="EUW" description="Europe West" />

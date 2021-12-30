@@ -3,7 +3,7 @@ import { IoTelescopeOutline } from "react-icons/io5"
 
 const Why = () => {
 	return (
-		<div className="max-w-[1350px] w-[90vw] mx-auto -mt-28 mb-28 flex justify-center flex-wrap gap-10">
+		<div id="about" className="max-w-[1350px] w-[90vw] mx-auto -mt-28 mb-28 flex justify-center flex-wrap gap-10 scroll-mt-10">
 			<WhyItem
 				Icon={IoTelescopeOutline}
 				title="Qui dolor dolor duis sint fugiat sint."
