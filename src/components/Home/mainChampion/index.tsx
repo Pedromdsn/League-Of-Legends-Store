@@ -1,3 +1,4 @@
+import Link from "next/link"
 import ChampImage from "./ChampImage"
 
 const MainChampion = () => {
@@ -14,13 +15,30 @@ const MainChampion = () => {
 						occaecat ut ut anim cupidatat eiusmod id.
 					</h2>
 					<div className="flex gap-7 uppercase md:mx-auto">
-						<div className="bg-blue-400 px-14 md:px-5 py-3 rounded font-medium cursor-pointer hover:brightness-90 transition-all">Button #1</div>
-						<div className="bg-green-400 px-14 md:px-5 py-3 rounded font-medium cursor-pointer hover:brightness-90 transition-all">Button #2</div>
+						<Button title="Button #1" color="bg-blue-500" />
+						<Button title="Button #2" color="bg-green-400" />
 					</div>
 				</div>
-				<ChampImage/>
+				<ChampImage />
 			</div>
 		</div>
+	)
+}
+
+interface ButtonProps {
+	title: string
+	link?: string
+	color: string
+}
+
+const Button = ({ title, color, link = "#" }: ButtonProps) => {
+	return (
+		<Link href={link}>
+			<div
+				className={`${color} 00 px-14 md:px-5 py-3 rounded font-medium cursor-pointer hover:brightness-90 transition-all"`}>
+				{title}
+			</div>
+		</Link>
 	)
 }
 
