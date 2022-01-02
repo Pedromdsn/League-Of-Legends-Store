@@ -35,7 +35,7 @@ const Button = ({ title, color, link = "#" }: ButtonProps) => {
 	return (
 		<Link href={link}>
 			<div
-				className={`${color} 00 px-14 md:px-5 py-3 rounded font-medium cursor-pointer hover:brightness-90 transition-all"`}>
+				className={`${color} 00 px-14 md:px-5 py-3 rounded font-medium cursor-pointer hover:brightness-90 transition-all`}>
 				{title}
 			</div>
 		</Link>
