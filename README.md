@@ -22,6 +22,6 @@ In the styling of the site was used [Tailwindcss](https://tailwindcss.com/).
 
 ## Contact
 
-Discord: Coco Blanco#3873
+Discord: !   Pedromdsn#3873
 
 Site: https://pedromdsn.com
