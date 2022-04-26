@@ -6,13 +6,13 @@ import Region from "../components/Home/Region";
 
 const Home = () => {
   return (
-    <div >
+    <>
       <Header/>
       <MainChampion/>
       <Why/>
       <Region/>
       <Footer/>
-    </div>
+    </>
   );
 }
 

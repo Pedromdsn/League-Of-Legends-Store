@@ -5,7 +5,7 @@ const ChampImage = () => {
 	return (
 		<aside
 			className="champion xl:hidden">
-			<Image src={Champ} height="400px" width="400px" priority/>
+			<Image src={Champ} height="400px" width="400px" priority alt="Champion"/>
 		</aside>
 	)
 }

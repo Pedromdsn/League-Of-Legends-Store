@@ -4,5 +4,6 @@
 		"lolsotore",
 		"nibba",
 		"Yasuo"
-	]
+	],
+	"nuxt.isNuxtApp": false
 }
