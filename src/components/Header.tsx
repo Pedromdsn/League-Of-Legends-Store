@@ -11,7 +11,7 @@ const Header = () => {
 			<Logo />
 			<ul
 				className={`flex gap-6 items-center transition-all md:overflow-hidden 
-				md:justify-end duration-200 md:text-xl md:flex-col 
+				md:justify-end duration-200 md:text-xl md:flex-col
 				${mobile ? "md:h-[350px]" : "md:h-20 md:opacity-0"}`}>
 				<HeaderItem name="Home" />
 				<HeaderItem name="About" link="/#about"/>
@@ -47,7 +47,7 @@ interface IProps {
 const HeaderItem = ({ name, link = "#", destaque }: IProps) => {
 	return (
 		<Link href={link}>
-			<li className={`cursor-pointer ${destaque && "px-6 py-3 bg-blue-500 rounded-lg "}`}>{name}</li>
+			<li className={`cursor-pointer ${destaque && "px-6 py-3 bg-blue-600 rounded-lg "}`}>{name}</li>
 		</Link>
 	)
 }

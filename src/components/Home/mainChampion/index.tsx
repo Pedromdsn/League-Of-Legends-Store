@@ -15,8 +15,8 @@ const MainChampion = () => {
 						occaecat ut ut anim cupidatat eiusmod id.
 					</h2>
 					<div className="flex gap-7 uppercase md:mx-auto">
-						<Button title="Button #1" color="bg-blue-500" />
-						<Button title="Button #2" color="bg-green-400" />
+						<Button title="Button #1" color="bg-blue-600" />
+						<Button title="Button #2" color="bg-green-700" />
 					</div>
 				</div>
 				<ChampImage />
